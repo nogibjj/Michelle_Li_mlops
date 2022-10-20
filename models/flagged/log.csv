@@ -1,0 +1,5 @@
+text,output,flag,username,timestamp
+Does Chicago have any stores and does Joe live here?,,,,2022-10-20 01:45:49.543143
+,,,,2022-10-20 01:45:51.985346
+Does Chicago have any stores and does Joe live here?,/workspaces/MLops/models/flagged/output/tmp3xnvp4t_.json,,,2022-10-20 01:47:17.040556
+Hi,/workspaces/MLops/models/flagged/output/tmpqanz4x06.json,,,2022-10-20 01:47:25.197006
