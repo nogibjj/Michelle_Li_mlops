@@ -13,7 +13,7 @@ from transformers import TrainingArguments, Trainer
 import numpy as np
 
 # Load the dataset
-dataset = load_dataset("yelp_review_full")
+dataset = load_dataset("imdb")
 dataset["train"][100]
 tokenizer = AutoTokenizer.from_pretrained("bert-base-cased")
 
@@ -22,7 +22,7 @@ def tokenize_function(examples):
 tokenized_datasets = dataset.map(tokenize_function, batched=True)
 
 # Load the model
-model = AutoModelForSequenceClassification.from_pretrained("bert-base-cased", num_labels=5)
+model = AutoModelForSequenceClassification.from_pretrained("bert-base-cased", num_labels=2)
 
 metric = load_metric("accuracy")
 def compute_metrics(eval_pred):
